@@ -1,0 +1,7 @@
+{
+  "name": "rivy",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
