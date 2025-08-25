@@ -5,12 +5,16 @@
 }
 
 .header {
+    position: sticky;
+    top: 30px;
+    left: 0;
+    z-index: 100;
     background: rgb(14, 35, 22);
     @include flex-center;
     justify-content: space-between;
     padding: 12px 18px;
     border-radius: var(--rivy-border-radius);
-    border: .5px solid  var(--rivy-border-color);
+    border: .5px solid var(--rivy-border-color);
 
     .company-tag {
         max-width: 100px;
@@ -58,28 +62,16 @@
 
         .login {
             padding: 0 24px;
-            border-radius:var(--rivy-border-radius);
-            background:var(--rivy-text-color);;
+            border-radius: var(--rivy-border-radius);
+            background: var(--rivy-text-color);
+            ;
             transition: all .2s ease-in-out;
             font-weight: 300;
         }
 
         .login:hover {
             transition: all .2s ease-in-out;
-            background:var(--rivy-btn-background);
-        }
-
-        .create {
-            padding: 0 24px;
-            border-radius: 5px;
-            background:var(--rivy-btn-background);
-            transition: all .2s ease-in-out;
-            font-weight: 300;
-        }
-
-        .create:hover {
-            background:var(--rivy-text-color);
-            transition: all .2s ease-in-out;
+            background: var(--rivy-btn-background);
         }
     }
 }

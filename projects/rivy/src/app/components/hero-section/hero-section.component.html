@@ -1,0 +1,10 @@
+<div class="hero">
+  <div class="info">
+    <ion-label>{{hero.textInfo | titlecase}} <span>{{hero.textInfoUnderline | titlecase}}</span> </ion-label>
+    <p>{{hero.supportText}}</p>
+    <ion-button class="create" color="none"> Get access</ion-button>
+  </div>
+  <div class="img">
+    <img [src]="hero.image" />
+  </div>
+</div>

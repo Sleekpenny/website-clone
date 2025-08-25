@@ -21,3 +21,16 @@ ion-button {
   width: fit-content;
   font-size: 13.5px
 }
+
+.create {
+  padding: 0 24px;
+  border-radius: 5px;
+  background: var(--rivy-btn-background);
+  transition: all .2s ease-in-out;
+  font-weight: 300;
+}
+
+.create:hover {
+  background: var(--rivy-text-color);
+  transition: all .2s ease-in-out;
+}
