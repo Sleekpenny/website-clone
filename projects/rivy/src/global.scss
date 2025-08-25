@@ -36,3 +36,10 @@
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
 @import '../node_modules/shared-library/assets/scss/styles.scss';
+
+
+*, body {
+    font-family: "Degular Display Demo", "Roboto", "sans-serif" !important;
+    font-size: auto;
+    margin: 0;
+}

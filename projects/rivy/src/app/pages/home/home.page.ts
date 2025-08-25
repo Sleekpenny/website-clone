@@ -1,16 +1,15 @@
 import { Component } from '@angular/core';
 import { IonHeader, IonToolbar, IonTitle, IonContent, IonText, IonButton } from '@ionic/angular/standalone';
-import { SharedLibraryService } from 'shared-library';
+import { HeaderComponent } from "../../components/header/header.component";
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   standalone: true,
-  imports: [IonText, IonHeader, IonToolbar, IonTitle, IonContent, IonButton],
+  imports: [IonText, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, HeaderComponent],
 })
 export class HomePage {
-  constructor(private sharedComponent: SharedLibraryService) {
-    this.sharedComponent
+  constructor() {
   }
 }

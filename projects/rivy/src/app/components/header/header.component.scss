@@ -1,0 +1,85 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    background: rgb(14, 35, 22);
+    @include flex-center;
+    justify-content: space-between;
+    padding: 12px 18px;
+    border-radius: var(--rivy-border-radius);
+    border: .5px solid  var(--rivy-border-color);
+
+    .company-tag {
+        max-width: 100px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .header-info {
+        @include flex-center;
+        gap: 5px;
+        padding: 6px;
+        border-radius: var(--rivy-border-radius);
+        border: .2px solid var(--rivy-border-color);
+
+        .header-title {
+            padding: 9px 12px;
+            @include flex-center();
+            gap: 5px;
+            align-items: end;
+            background: #3e4f4566;
+            color: var(--rivy-text-color);
+            border-radius: var(--rivy-border-radius);
+            transition: all .2s ease-in-out;
+
+            p {
+                margin: 0px;
+                font-weight: 600;
+            }
+        }
+
+        .header-title:hover {
+            background: rgba(234, 232, 232, 0.404);
+            transition: all .2s ease-in-out;
+        }
+
+    }
+
+    .access-btn {
+        @include flex-center;
+        gap: 5px;
+
+        .login {
+            padding: 0 24px;
+            border-radius:var(--rivy-border-radius);
+            background:var(--rivy-text-color);;
+            transition: all .2s ease-in-out;
+            font-weight: 300;
+        }
+
+        .login:hover {
+            transition: all .2s ease-in-out;
+            background:var(--rivy-btn-background);
+        }
+
+        .create {
+            padding: 0 24px;
+            border-radius: 5px;
+            background:var(--rivy-btn-background);
+            transition: all .2s ease-in-out;
+            font-weight: 300;
+        }
+
+        .create:hover {
+            background:var(--rivy-text-color);
+            transition: all .2s ease-in-out;
+        }
+    }
+}
