@@ -5,19 +5,20 @@
 }
 
 .header {
-    position: sticky;
-    top: 30px;
+    position: sticky !important;
+    top: 25px !important;
     left: 0;
     z-index: 100;
     background: rgb(14, 35, 22);
-    @include flex-center;
-    justify-content: space-between;
+    @include flex-center();
+    justify-content: space-between !important;
     padding: 12px 18px;
     border-radius: var(--rivy-border-radius);
     border: .5px solid var(--rivy-border-color);
+    max-width: 1200px;
 
     .company-tag {
-        max-width: 100px;
+        max-width: 95px;
 
         img {
             width: 100%;
@@ -34,7 +35,7 @@
         border: .2px solid var(--rivy-border-color);
 
         .header-title {
-            padding: 9px 12px;
+            padding: 6px 12px;
             @include flex-center();
             gap: 5px;
             align-items: end;
@@ -59,19 +60,5 @@
     .access-btn {
         @include flex-center;
         gap: 5px;
-
-        .login {
-            padding: 0 24px;
-            border-radius: var(--rivy-border-radius);
-            background: var(--rivy-text-color);
-            ;
-            transition: all .2s ease-in-out;
-            font-weight: 300;
-        }
-
-        .login:hover {
-            transition: all .2s ease-in-out;
-            background: var(--rivy-btn-background);
-        }
     }
 }

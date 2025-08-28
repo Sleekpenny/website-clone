@@ -1,0 +1,14 @@
+@import '../utilities/mixing.scss';
+@import '../utilities/variables.scss';
+
+  .page {
+    @include page-container();
+  } 
+
+.rivy-page-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}

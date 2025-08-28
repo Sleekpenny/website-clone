@@ -1,36 +1,31 @@
-.robex-page-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
-
-.page {
-  padding: 30px 4.5rem;
-
-  section {
-    padding: 1.3rem 0;
-  }
-}
+@import '../utilities/variables.scss';
 
 ion-button {
   margin: 0;
+  padding: 0 12px;
+  border-radius: var(--rivy-border-radius);
   --box-shadow: none;
   text-transform: none;
   width: fit-content;
-  font-size: 13.5px
+  font-size: 13.5px;
+  transition: all .2s ease-in-out;
+  font-weight: 300;
 }
 
 .create {
-  padding: 0 24px;
-  border-radius: 5px;
   background: var(--rivy-btn-background);
-  transition: all .2s ease-in-out;
-  font-weight: 300;
 }
 
 .create:hover {
   background: var(--rivy-text-color);
   transition: all .2s ease-in-out;
+}
+
+.login {
+  background: var(--rivy-text-color);
+}
+
+.login:hover {
+  transition: all .2s ease-in-out;
+  background: var(--rivy-btn-background);
 }

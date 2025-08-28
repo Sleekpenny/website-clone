@@ -4,12 +4,16 @@
     background-repeat: repeat;
     background-position: cover;
     background-size: center;
-    max-height: 100vh;
-    width: 100%;
-    z-index: 10000;
-  
-    .page-container {
-      padding: 0px 500px;
-      padding-top: 30px;
-    }
+    min-height: 100vh !important;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+  }
+
+  .section {
+    background: var(--rivy-background);
+        min-height: 100vh !important;
   }
