@@ -1,8 +1,12 @@
 <div class="ad-container">
   <div class="content-container">
     <div class="title-block">
-      <ion-label>Many ways to make clean energy yours and</ion-label>
+      <ion-label [innerHTML]="title"></ion-label>
     </div>
-    <rivy-ad-energy-card />
+    <div class="grid-4">
+      @for (card of cards; track $index) {
+      <rivy-ad-energy-card [card]="card" />
+      }
+    </div>
   </div>
 </div>

@@ -5,12 +5,20 @@
         
         .title-block {            
             margin: 0px 0px 48px;
-            width: 50%;
             ion-label {
                 font-size: 45px;
                 font-weight: 600;
+                color: var(--rivy-text-color);
+                line-height: 1.1;
             }
         }
 
     }
 }
+
+  .grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    gap: 15px
+  }

@@ -1,3 +1,51 @@
 .card {
-    
+    padding: 18px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+
+    p {
+        font-size: 34px;
+        margin: 0 0 6px;
+        font-weight: 600;
+        text-wrap: wrap;
+    }
+
+    .subText {
+        margin: 0;
+        padding: 5px 5px 0px 0px ;
+        font-size: 15px;
+        font-weight: 400;
+        height: 100px;
+    }
+
+    .btn {
+        padding: 10px 12px;
+        background: #00294d;
+        color: var(--rivy-text-color);
+        font-size: 13.5px;
+        margin-bottom: 55px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: fit-content;
+        border-radius: 5px;
+        transition: all .2s ease-in-out;
+
+        ion-icon {
+            width: 18px
+        }
+    }
+
+    .btn:hover {
+        background: #4dbf8c;
+        transition: all .2s ease-in-out;
+    }
+}
+
+.card:hover {
+    transform: scale(1.02);
+    transition: all .3s ease-in-out;
 }

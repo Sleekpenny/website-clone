@@ -1,3 +1,18 @@
-<div class="card">
-  
+<div
+  class="card"
+  [style.backgroundColor]="card.background"
+  [style.color]="card.title !== 'Iventory Finance' ? '#0e2316' : '#00294d'"
+  [ngStyle]="{
+    backgroundImage: 'url(' + card.backgroundImg + ')',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'bottom right',
+  }"
+  routerLink="/"
+>
+  <p>{{ card.title }}</p>
+  <p class="subText">{{ card.subTitle }}</p>
+  <div class="btn">
+    <ion-label>{{ card.btnText }}</ion-label>
+    <ion-icon name="arrow-forward-outline" size="large"></ion-icon>
+  </div>
 </div>
