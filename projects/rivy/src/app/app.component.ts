@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
 import * as ionIcons from 'ionicons/icons';
 import { addIcons } from 'ionicons';
+import { register } from 'swiper/element/bundle';
+
+register();
 
 @Component({
   selector: 'app-root',
