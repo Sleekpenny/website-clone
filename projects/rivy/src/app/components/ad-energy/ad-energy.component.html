@@ -3,7 +3,7 @@
     <div class="title-block">
       <ion-label [innerHTML]="title"></ion-label>
     </div>
-    <div class="grid-4">
+    <div class="card-layout">
       @for (card of cards; track $index) {
       <rivy-ad-energy-card [card]="card" />
       }

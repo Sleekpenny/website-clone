@@ -14,35 +14,7 @@
       </ion-icon>
     </ion-text>
   </div>
-
-  <div class="swiper-section">
-    <div class="img">
-      <img src="/assets/icon/quote-left.png" />
-    </div>
-    <swiper-container
-      #swiperContainer
-      autoplay="true"
-      direction="vertical"
-      loop="true"
-      (swiperinit)="onSwiperInit($event)"
-    >
-      <swiper-slide *ngFor="let item of testimonies; let i = index">
-        <div class="testimonies-stories">
-          <div class="testimony">{{ item.userName }}</div>
-          <div class="testimony-body">
-            {{ item.contentBody }}
-          </div>
-        </div>
-      </swiper-slide>
-    </swiper-container>
-
-    <ion-buttons>
-      <ion-button (click)="prevSlide()" class="ion-no-padding ion-no-margin">
-        <ion-icon name="arrow-up-outline" size="small"></ion-icon>
-      </ion-button>
-      <ion-button (click)="nextSlide()" class="ion-no-padding ion-no-margin">
-        <ion-icon name="arrow-down-outline" size="small"></ion-icon>
-      </ion-button>
-    </ion-buttons>
+  <div class="testomies">
+    <rivy-testimony-slider [testimonies]="testimonies" />
   </div>
 </div>

@@ -2,7 +2,8 @@
     padding: 120px 0px;
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+  
+    width: 100% !important;
 
     .business-rating {
         display: flex;
@@ -10,6 +11,7 @@
         flex-direction: column;
         align-items: start;
         gap: 20px;
+        width: 100% !important;
 
         ion-label {
             font-size: 45px;
@@ -42,77 +44,8 @@
         }
     }
 
-
-    .swiper-section {
-        position: relative;
-        display: flex;
-        width: 50%;
-        padding: 15px 0 0 25px;
-        margin-top: 60px;
-        max-height: 250px;
-
-        img {
-            width: 500px;
-
-            img {
-                width: 100%;
-                height: 100%;
-                overflow: hidden;
-            }
-        }
-
-        .testimonies-stories {
-            padding: 0 0 0 18px;
-
-            .testimony {
-                background: #5cd1f4;
-                border-radius: 5px;
-                padding: 10px;
-                color: #0e2316;
-                font-size: 10.5px;
-                width: fit-content;
-            }
-
-            .testimony-body {
-                padding: 18px 0 0 0;
-                font-size: 15px;
-                text-align: justify;
-                max-height: 150px !important;
-                overflow: hidden;
-                white-space: wrap;
-                text-overflow: ellipsis;
-            }
-        }
-
-        ion-buttons {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-            padding: 0 0 0 18px;
-
-            ion-button {
-                background: #15dda9;
-                border-radius: 5px;
-
-                ion-icon {
-                    color: #0e2316;
-                }
-
-            }
-        }
-    }
-
-    .swiper-section::before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        top: 0;
-        left: 0;
-        width: 250px;
-        height: 70px;
-        border-top: 2px solid #fbc56f;
-        border-left: 2px solid #fbc56f;
-        border-top-left-radius: 10px;
+    .testomies {
+        width: 100% !important
     }
 }
 
@@ -138,5 +71,6 @@
             flex-direction: column;
             align-items: center;
         }
+
     }
 }

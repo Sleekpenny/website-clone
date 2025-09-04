@@ -16,9 +16,33 @@
     }
 }
 
-  .grid-4 {
+  .card-layout {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     width: 100%;
     gap: 15px
   }
+  
+@media only screen and (max-width:525px) { 
+    .card-layout {
+    display: flex;
+    flex-direction: row;
+    overflow:auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+  }
+
+  .card-layout::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card-layout > * {
+    flex: 0 0 90vw; /* 90% of viewport width for better visual */
+    max-width: 350px;
+    min-width: 280px;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+  }
+}

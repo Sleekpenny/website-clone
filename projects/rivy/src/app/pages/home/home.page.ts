@@ -17,28 +17,28 @@ export class HomePage {
   cards: adEnergy[] = [
     {
       background: '#5cd1f4',
-      title: 'Iventory Finance',
+      title: 'Iventory <br> Finance',
       subTitle: 'Solar demand is growing, your business should grow too',
       btnText: 'Get access',
       backgroundImg: '/assets/image/inventory-5HbNxl3p.svg',
     },
     {
       background: '#fbc56f',
-      title: 'Asset Finance',
+      title: 'Asset <br> Finance',
       subTitle: 'You should not need a fortune to pwoer your home or business',
       btnText: 'Get access',
       backgroundImg: '/assets/image/asset-DIdxap39.svg',
     },
     {
       background: '#15dda9',
-      title: 'Carbon Finance',
+      title: 'Carbon <br> Finance',
       subTitle: 'Track your clean energy impact and turn it itnot income.',
       btnText: 'Get access',
       backgroundImg: '/assets/image/turbine-6jHg6Q-d.svg',
     },
     {
       background: '#ff7646',
-      title: 'Energy Stack',
+      title: 'Energy <br> Stack',
       subTitle: 'Buy high-quality and authentic solar equipment for your home, business or energy projects',
       btnText: 'Get access',
       backgroundImg: '/assets/image/download.svg',

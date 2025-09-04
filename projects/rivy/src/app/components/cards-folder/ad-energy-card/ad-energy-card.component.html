@@ -9,7 +9,7 @@
   }"
   routerLink="/"
 >
-  <p>{{ card.title }}</p>
+  <p [innerHTML]="card.title"></p>
   <p class="subText">{{ card.subTitle }}</p>
   <div class="btn">
     <ion-label>{{ card.btnText }}</ion-label>
