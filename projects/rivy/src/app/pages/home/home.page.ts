@@ -5,13 +5,14 @@ import { AdEnergyComponent } from 'src/app/components/ad-energy/ad-energy.compon
 import { adEnergy } from 'src/app/interface/ad-energy-card';
 import { CommonModule } from '@angular/common';
 import { CleanEnergyComponent } from "src/app/components/clean-energy/clean-energy.component";
+import { GreenLightComponent } from "src/app/components/green-light/green-light.component";
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   standalone: true,
-  imports: [IonContent, HeroSectionComponent, AdEnergyComponent, CommonModule, CleanEnergyComponent],
+  imports: [IonContent, HeroSectionComponent, AdEnergyComponent, CommonModule, CleanEnergyComponent, GreenLightComponent],
 })
 export class HomePage {
   cards: adEnergy[] = [

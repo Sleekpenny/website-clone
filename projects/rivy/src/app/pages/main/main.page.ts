@@ -9,7 +9,7 @@ import { HeaderComponent } from "src/app/components/header/header.component";
   templateUrl: './main.page.html',
   styleUrls: ['./main.page.scss'],
   standalone: true,
-  imports: [IonContent, IonRouterOutlet, CommonModule, FormsModule, HeaderComponent]
+  imports: [ IonRouterOutlet, CommonModule, FormsModule, HeaderComponent]
 })
 export class MainPage implements OnInit {
 
