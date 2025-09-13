@@ -20,5 +20,14 @@
 
   .section-netural {
     min-height: 100vh;
-    
+
+    .border {
+      border: 0.5px solid var(--ion-color-dark);
+    }
+
+    .section-analytics {      
+    background: var(--rivy-background);
+    min-height: 100vh;
+    transform: translateY(-20%);
+    }
   }

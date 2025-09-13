@@ -1,0 +1,22 @@
+.analytics {
+    padding: 24px 0;
+    .card {
+        padding: 60px 0;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width:525px) {
+    .analytics {
+        padding: 0;
+
+        .card {
+            padding: 0px !important;
+            flex-direction: column;
+        }
+    }
+}

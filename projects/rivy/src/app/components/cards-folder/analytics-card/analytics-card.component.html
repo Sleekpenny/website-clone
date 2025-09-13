@@ -1,0 +1,13 @@
+<div class="card" [style.background]="analytic.background">
+  <ion-text [style.color]="analytic.title !== '37k' ? '#0e2316' : '#00294d'">
+    <ion-label>{{ analytic.title }}</ion-label>
+    <p>{{ analytic.subTitle }}</p>
+  </ion-text>
+
+  <div class="img-block">
+    <img
+      [src]="analytic.image"
+      [style.marginTop]="
+        analytic.image == '/assets/image/download chart.svg' ? '20px' : ''" />
+  </div>
+</div>

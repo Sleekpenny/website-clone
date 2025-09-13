@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonText, IonLabel, IonButton } from '@ionic/angular/standalone'
-import { CheckoutCardComponent, GreenCard } from "../cards-folders/checkout-card/checkout-card.component";
+import { CheckoutCardComponent, GreenCard } from "../cards-folder/checkout-card/checkout-card.component";
 
 @Component({
   selector: 'rivy-green-light',

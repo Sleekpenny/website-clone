@@ -6,13 +6,16 @@ import { adEnergy } from 'src/app/interface/ad-energy-card';
 import { CommonModule } from '@angular/common';
 import { CleanEnergyComponent } from "src/app/components/clean-energy/clean-energy.component";
 import { GreenLightComponent } from "src/app/components/green-light/green-light.component";
+import { GateAccessComponent } from "src/app/components/gate-access/gate-access.component";
+import { AnalyticsComponent } from "src/app/components/analytics/analytics.component";
+import { analyticCard } from 'src/app/components/cards-folder/analytics-card/analytics-card.component';
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   standalone: true,
-  imports: [IonContent, HeroSectionComponent, AdEnergyComponent, CommonModule, CleanEnergyComponent, GreenLightComponent],
+  imports: [IonContent, HeroSectionComponent, AdEnergyComponent, CommonModule, CleanEnergyComponent, GreenLightComponent, GateAccessComponent, AnalyticsComponent],
 })
 export class HomePage {
   cards: adEnergy[] = [
@@ -45,5 +48,26 @@ export class HomePage {
       backgroundImg: '/assets/image/download.svg',
     },
   ];
+
+  analytics: analyticCard[] = [
+    {
+    image: '/assets/image/download shape.svg',
+    subTitle: 'in disbursement',
+    title: '#38B', 
+    background: 'oklch(79.82% .1594 167.83)'
+  },
+    {
+    image: '/assets/image/download boxes.svg',
+    subTitle: 'loans approved',
+    title: '37k', 
+    background: 'oklch(80.72% .1153 220.72)'
+  },
+    {
+    image: '/assets/image/download chart.svg',
+    subTitle: 'users on this platform',
+    title: '6,000', 
+    background: 'oklch(85.44% .1208 77.63)'
+  }
+  ]
   constructor() {}
 }

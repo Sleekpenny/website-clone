@@ -29,18 +29,20 @@
         ion-text {
             text-align: center;
             span {
-                color: var(--ion-color-light);
+                color: black;
+                font-weight: 200
             }
 
             ion-label {
                 display: block;
                 font-size: 27px;
                 font-weight: 700;
-                color: var(--ion-color-light);
+                color: black;
                 margin-bottom: 12px;
 
                 .breakoff {
                     color: oklab(79.821% -0.15586 0.03352);
+                    font-weight: 700
                 }
             }
         }
@@ -56,3 +58,32 @@
         border-bottom-right-radius: 5px;
     }
 }
+
+@media only screen and (max-width:525px) { 
+    .green-container {
+        flex-direction: column;
+        padding: 0;
+
+        .product-container {
+            width: 100%;
+
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .confirmation-container {
+            width: 100%;
+
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+
+        }
+
+    }
+  }
