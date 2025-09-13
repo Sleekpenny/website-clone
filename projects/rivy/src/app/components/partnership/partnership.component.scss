@@ -1,0 +1,124 @@
+.partnership {
+    transform: translateY(40%);
+    padding: 40px 0px;
+
+    ion-text {
+        text-align: center;
+
+        ion-label {
+            font-size: 44px;
+            color: var(--rivy-text-color);
+            font-weight: 500;
+            display: block;
+            width: 100%;
+        }
+
+        p {
+            color: var(--rivy-support-text-color);
+            font-size: 15px;
+            padding: 0;
+            width: 45%;
+            margin: auto;
+            padding-top: 25px
+        }
+    }
+
+    .glow-border {
+        margin-top: 30px;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        align-items: end;
+        justify-content: center;
+
+        .partners {
+            padding: 30px;
+        }
+    }
+}
+
+.glow-border::before,
+.glow-border::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 80px;
+    border-top: 1px solid #5cd1f4;
+    border-left: 1px solid #5cd1f4;
+    border-right: 1px solid #5cd1f4;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.glow-border::before {
+    animation: pulseWave1 5s ease-in-out infinite;
+}
+
+.glow-border::after {
+    animation: pulseWave2 5s ease-in-out infinite 1.5s;
+}
+
+@keyframes pulseWave1 {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    30% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+
+    60% {
+        opacity: 0.6;
+        transform: scale(1.05);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+}
+
+@keyframes pulseWave2 {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    30% {
+        opacity: 0.8;
+        transform: scale(1);
+
+    }
+
+    60% {
+        opacity: 0.6;
+        transform: scale(1.05);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+}
+
+
+@media only screen and (max-width:525px) {
+    .partnership {
+        .glow-border {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        ion-text {
+            padding: 40px;
+
+            p {
+                width: 100%
+            }
+        }
+    }
+}

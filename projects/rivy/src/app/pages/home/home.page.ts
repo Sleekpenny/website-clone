@@ -9,13 +9,14 @@ import { GreenLightComponent } from "src/app/components/green-light/green-light.
 import { GateAccessComponent } from "src/app/components/gate-access/gate-access.component";
 import { AnalyticsComponent } from "src/app/components/analytics/analytics.component";
 import { analyticCard } from 'src/app/components/cards-folder/analytics-card/analytics-card.component';
+import { PartnershipComponent } from 'src/app/components/partnership/partnership.component';
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   standalone: true,
-  imports: [IonContent, HeroSectionComponent, AdEnergyComponent, CommonModule, CleanEnergyComponent, GreenLightComponent, GateAccessComponent, AnalyticsComponent],
+  imports: [IonContent, HeroSectionComponent, AdEnergyComponent, CommonModule, CleanEnergyComponent, GreenLightComponent, GateAccessComponent, AnalyticsComponent, PartnershipComponent],
 })
 export class HomePage {
   cards: adEnergy[] = [

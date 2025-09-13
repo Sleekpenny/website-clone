@@ -1,0 +1,15 @@
+<div class="partnership">
+  <ion-text>
+    <ion-label>{{ title }}</ion-label>
+    <p>{{ body }}</p>
+  </ion-text>
+
+  <div class="glow-border">
+    @for(partnerLogo of partnerLogos; track $index) {
+      <div class="partners">
+        <img [src]="partnerLogo" />
+      </div>
+    }
+  </div>
+
+</div>
