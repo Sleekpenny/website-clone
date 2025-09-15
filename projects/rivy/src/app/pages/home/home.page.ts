@@ -11,13 +11,14 @@ import { AnalyticsComponent } from "src/app/components/analytics/analytics.compo
 import { analyticCard } from 'src/app/components/cards-folder/analytics-card/analytics-card.component';
 import { PartnershipComponent } from 'src/app/components/partnership/partnership.component';
 import { FaqSectionComponent } from "src/app/components/faq-section/faq-section.component";
+import { FooterAdComponent } from "src/app/components/footer/footer-ad/footer-ad.component";
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   standalone: true,
-  imports: [IonContent, HeroSectionComponent, AdEnergyComponent, CommonModule, CleanEnergyComponent, GreenLightComponent, GateAccessComponent, AnalyticsComponent, PartnershipComponent, FaqSectionComponent],
+  imports: [IonContent, HeroSectionComponent, AdEnergyComponent, CommonModule, CleanEnergyComponent, GreenLightComponent, GateAccessComponent, AnalyticsComponent, PartnershipComponent, FaqSectionComponent, FooterAdComponent],
 })
 export class HomePage {
   cards: adEnergy[] = [
