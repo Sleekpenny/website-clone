@@ -1,0 +1,45 @@
+     ion-accordion {
+         background: transparent;
+         border-radius: 10px;
+         border: 2px solid #cfd3d066;
+         padding: 0px 18px;
+         margin: 0px 0px 12px;
+
+         display: flex;
+         flex-direction: column;
+
+         ion-item {
+             ion-label {
+                 --color: black;
+             }
+
+             .ion-accordion-toggle-icon {
+                 border: .5px solid oklch(80.72% .1153 220.72);
+                 color: oklch(80.72% .1153 220.72);
+                 border-radius: 3px;
+                 padding: 0 !important;
+                 font-size: 12px;
+                 transition: all 0.3s ease;
+             }
+         }
+
+         .accordion-body {
+             color: var(--rivy-support-text-color);
+             padding: 0px 0px 0px 6px;
+
+             li {
+                 padding-bottom: 12px;
+             }
+         }
+     }
+
+     ion-accordion ion-item[slot="header"] {
+         --inner-padding-end: 0px;
+         --ion-safe-area-right: 0px;
+     }
+
+     ion-accordion.accordion-expanding,
+     ion-accordion.accordion-expanded {
+         border: 1px solid oklch(79.82% .1594 167.83);
+         border-radius: 10px
+     }

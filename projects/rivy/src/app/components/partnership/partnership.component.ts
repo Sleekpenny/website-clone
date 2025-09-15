@@ -15,7 +15,7 @@ export class PartnershipComponent  implements OnInit {
   body: string = 'We are proud to work with some of the most forward-thinking partners. Together, we are making clean energy flow further, faster, and fairer.'
 
   partnerLogos = [
-    'https://rivy.co/assets/partners-ycombinator-BOW6Sfyb.svg', 'https://rivy.co/assets/partners-echovc-WBAiJZNv.svg', 'https://rivy.co/assets/partners-mercycorps-RgijAJjE.svg', 'https://rivy.co/assets/partners-allon-TZr3-8_q.svg', 'https://rivy.co/assets/partners-launchafrica-CYfUDOZm.svg'
+    'https://rivy.co/assets/partners-ycombinator-BOW6Sfyb.svg', 'https://rivy.co/assets/partners-echovc-WBAiJZNv.svg', 'https://rivy.co/assets/partners-mercycorps-RgijAJjE.svg', 'https://rivy.co/assets/partners-allon-TZr3-8_q.svg', 'https://rivy.co/assets/partners-launchafrica-CYfUDOZm.svg',
   ]
 
   constructor() { }

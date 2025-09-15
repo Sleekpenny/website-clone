@@ -1,0 +1,33 @@
+      <ion-accordion-group>
+        @for (faq of faqItems; track $index) {
+        <ion-accordion
+          [value]="faq.value"
+          class="ion-no-padding"
+          (click)="toggleFAQ(faq.value)"
+        >
+          <ion-item
+            slot="header"
+            lines="none"
+            detail="false"
+            color="none"
+            class="ion-no-padding"
+          >
+            <ion-label>{{ faq.header }}</ion-label>
+            <ion-icon
+              name="chevron-down"
+              class="ion-accordion-toggle-icon"
+            ></ion-icon>
+          </ion-item>
+          <div class="ion-no-padding accordion-body" slot="content">
+            <ion-label>{{ faq.title }}</ion-label>
+            @if (faq.list) {
+            <ul>
+              @for (item of faq.list; track $index) {
+              <li>{{ item }}</li>
+              }
+            </ul>
+            }
+          </div>
+        </ion-accordion>
+        }
+      </ion-accordion-group>

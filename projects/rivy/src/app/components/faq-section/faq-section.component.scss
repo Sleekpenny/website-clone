@@ -1,0 +1,149 @@
+.faq-container {
+    padding: 45px 0;
+        transform: translateY(20%);
+
+    .faq-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        gap: 10px;
+        padding: 60px 0;
+        width: 100%;
+
+        .folder {
+            padding: 30px 18px 0 36px;
+            border-radius: 10px;
+            background: #ffffff;
+            width: 100%;
+            position: relative;
+
+            ion-label {
+                margin: 0px 0px 0px;
+                font-size: 32px;
+                font-weight: 600;
+                color: black;
+            }
+
+
+            .folder-stack {
+                position: relative;
+                height: 200px;
+                width: 100%;
+                margin-top: 30px
+            }
+
+            .folder-card {
+                position: absolute;
+                width: 100%;
+                height: 150px;
+                transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                cursor: pointer;
+                overflow: hidden;
+            }
+
+            .folder-card:hover {
+                transform: translateY(-20px)
+            }
+
+            /* Folder card design */
+            .folder-card::before {
+                content: '';
+                position: absolute;
+                bottom: 10px;
+                left: 0;
+                right: 0;
+                height: 100%;
+                border-radius: 12px 12px 4px 4px;
+                transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+            /* Folder tab */
+            .folder-card::after {
+                content: '';
+                position: absolute;
+                top: -1px;
+                left: 15px;
+                width: 80px;
+                height: 20px;
+                // background: linear-gradient(145deg, #f4a261, #e76f51);
+                border-radius: 8px 8px 0 0;
+                z-index: 5;
+                transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+            .folder-card[data-folder="1"]::after {
+                background: linear-gradient(145deg, #ff6b35, #f7931e);
+            }
+
+            .folder-card[data-folder="2"]::after {
+                background: linear-gradient(145deg, #3498db, #2980b9);
+            }
+
+            .folder-card[data-folder="3"]::after {
+                background: linear-gradient(145deg, #2ecc71, #27ae60);
+            }
+
+            .folder-card[data-folder="4"]::after {
+                background: linear-gradient(145deg, #9b59b6, #8e44ad);
+            }
+
+            /* Folder content area */
+            .folder-content-area {
+                position: absolute;
+                top: 15px;
+                left: 15px;
+                right: 15px;
+                bottom: 15px;
+                border-radius: 8px;
+                box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+                transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                z-index: 20;
+
+                height: 100%;
+                width: 100%;
+            }
+
+            /* Different colors for each folder */
+            .folder-content-area[data-folder="1"] {
+                background: linear-gradient(145deg, #ff6b35, #f7931e);
+            }
+
+            .folder-content-area[data-folder="2"] {
+                background: linear-gradient(145deg, #3498db, #2980b9);
+            }
+
+            .folder-content-area[data-folder="3"] {
+                background: linear-gradient(145deg, #2ecc71, #27ae60);
+            }
+
+            .folder-content-area[data-folder="4"] {
+                background: linear-gradient(145deg, #9b59b6, #8e44ad);
+            }
+
+            /* Raised state for folder cards */
+            .folder-card.raised {
+                transform: translateY(-25px) rotateX(5deg);
+                z-index: 10 !important;
+            }
+        }
+
+        .accrodions {
+            background: oklch(96.41% .0218 138.98);
+            padding: 24px;
+            border-radius: 10px;
+            width: 100% !important;
+            max-height: 300px;
+            overflow: auto;
+
+       
+        }
+    }
+}
+
+@media only screen and (max-width:525px) {
+    .faq-container {
+        .faq-wrapper {
+            flex-direction: column
+        }
+    }
+}

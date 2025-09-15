@@ -1,0 +1,27 @@
+<div class="faq-container">
+  <div class="faq-wrapper">
+    <div class="folder">
+      <ion-label>{{ faqTitle }}</ion-label>
+      <div class="folder-stack">
+        @for (item of faqItems; track $index) {
+        <div
+          class="folder-card"
+          [class.raised]="item.isActive"
+          [style.bottom.px]="$index * 20"
+          [style.z-index]="faqItems.length - $index"
+          [attr.data-folder]="$index + 1"
+          [attr.id]="'folder-' + item.value"
+        >
+          <div
+            class="folder-content-area"
+            [attr.data-folder]="$index + 1"
+          ></div>
+        </div>
+        }
+      </div>
+    </div>
+    <div class="accrodions">
+      <rivy-faq-listing [faqItems]="faqItems" />
+    </div>
+  </div>
+</div>
