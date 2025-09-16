@@ -12,3 +12,18 @@
   height: 100%;
   width: 100%;
 }
+
+
+@media only screen and (max-width: 525px) {
+  .show-desktop-only {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media only screen and (min-width: 525px) {
+  .show-mobile-only {
+    display: none;
+    visibility: hidden;
+  }
+  }

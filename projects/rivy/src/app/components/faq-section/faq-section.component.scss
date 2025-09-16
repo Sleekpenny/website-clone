@@ -1,21 +1,23 @@
 .faq-container {
-    padding: 45px 0;
-    transform: translateY(30%);
+padding: 0px 0 0 0;
+   transform: translateY(20%);
 
     .faq-wrapper {
         display: flex;
         justify-content: center;
         align-items: start;
-        gap: 10px;
+        gap: 20px;
         padding: 60px 0;
         width: 100%;
 
         .folder {
             padding: 30px 18px 0 36px;
-            border-radius: 10px;
+            border-radius: 18px;
             background: #ffffff;
             width: 100%;
             position: relative;
+            max-height: 300px !important;
+            overflow:hidden;
 
             ion-label {
                 margin: 0px 0px 0px;
@@ -130,20 +132,28 @@
         .accrodions {
             background: oklch(96.41% .0218 138.98);
             padding: 24px;
-            border-radius: 10px;
+            border-radius: 18px;
             width: 100% !important;
             max-height: 300px;
             overflow: auto;
-
-
         }
     }
 }
 
 @media only screen and (max-width:525px) {
     .faq-container {
+        transform: translateY(10%);
         .faq-wrapper {
-            flex-direction: column
+            flex-direction: column;
+
+            .folder {
+                padding: 20px;
+                ion-label{
+                    font-size: 18px;
+                    text-align: center;
+                    font-weight: 300
+                }
+            }
         }
     }
 }
