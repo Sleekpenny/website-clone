@@ -1,0 +1,15 @@
+<div class="footer">
+    <rivy-footer-address-card />
+    <div class="footer-items">
+        @for (footer of footerItems; track $index) {
+            <div class="footer-services">
+                <ion-label>{{ footer.title }}</ion-label>
+                <div class="">
+                    @for (item of footer.service; track $index) {
+                        <p [routerLink]="item.path">{{ item.title }}</p>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+</div>

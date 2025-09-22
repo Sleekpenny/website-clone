@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonContent } from '@ionic/angular/standalone';
+import { IonContent, IonFooter } from '@ionic/angular/standalone';
 import { HeroSectionComponent } from 'src/app/components/hero-section/hero-section.component';
 import { AdEnergyComponent } from 'src/app/components/ad-energy/ad-energy.component';
 import { adEnergy } from 'src/app/interface/ad-energy-card';
@@ -12,13 +12,14 @@ import { analyticCard } from 'src/app/components/cards-folder/analytics-card/ana
 import { PartnershipComponent } from 'src/app/components/partnership/partnership.component';
 import { FaqSectionComponent } from "src/app/components/faq-section/faq-section.component";
 import { FooterAdComponent } from "src/app/components/footer/footer-ad/footer-ad.component";
+import { FooterSectionComponent } from "src/app/components/footer/footer-section/footer-section.component";
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   standalone: true,
-  imports: [IonContent, HeroSectionComponent, AdEnergyComponent, CommonModule, CleanEnergyComponent, GreenLightComponent, GateAccessComponent, AnalyticsComponent, PartnershipComponent, FaqSectionComponent, FooterAdComponent],
+  imports: [IonContent, IonFooter, HeroSectionComponent, AdEnergyComponent, CommonModule, CleanEnergyComponent, GreenLightComponent, GateAccessComponent, AnalyticsComponent, PartnershipComponent, FaqSectionComponent, FooterAdComponent, FooterSectionComponent],
 })
 export class HomePage {
   cards: adEnergy[] = [

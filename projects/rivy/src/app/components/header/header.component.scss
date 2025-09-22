@@ -12,6 +12,8 @@
     background: rgb(14, 35, 22);
     @include flex-center();
     justify-content: space-between !important;
+    align-items: center;
+    margin: auto;
     padding: 12px 18px;
     border-radius: 10px;
     border: .5px solid var(--rivy-border-color);

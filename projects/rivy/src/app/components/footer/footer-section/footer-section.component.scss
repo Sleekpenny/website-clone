@@ -1,0 +1,41 @@
+.footer {
+    margin-top: 200px;
+
+    display: flex;
+    align-items: start;
+    gap: 30px;
+
+    .footer-items {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        gap: 50px;
+
+        .footer-services {
+            display: flex;
+            gap: 50px;
+
+            ion-label {
+                font-size: 15px;
+            }
+
+            p {
+                font-size: 13.5px;
+                color: var(--rivy-support-text-color);
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width:525px) {
+    .footer {
+        flex-direction: column;
+
+        .footer-items {
+            flex-direction: column;
+        }
+    }
+}
