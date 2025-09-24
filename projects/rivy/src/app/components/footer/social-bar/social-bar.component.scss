@@ -1,0 +1,65 @@
+.social-bar {
+    margin-top: 60px;
+    padding: 12px;
+    border-radius: 10px;
+    background: var(--ion-color-primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .company-details {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .border {
+            height: 40px;
+            width: 2px;
+            background: white;
+        }
+
+        .email-section {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            span {
+                font-size: 27px;
+                font-weight: 600;
+            }
+        }
+
+    }
+
+    .company-socials {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        .image-block {
+            border-radius: 5px;
+            background: white;
+            padding: 10.5px;
+        }
+    }
+}
+
+.copy-right {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+
+    ion-label {
+        display: flex;
+        gap: 10px;
+        font-weight: 200;
+
+        .circle {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--ion-color-primary)
+        }
+    }
+}

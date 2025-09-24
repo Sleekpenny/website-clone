@@ -1,0 +1,25 @@
+<div class="social-bar">
+  <div class="company-details">
+    <img src="assets/icon/logo-white.svg" width="110" />
+    <div class="border"></div>
+    <div class="email-section">
+      <img src="/assets/icon/download.svg" width="20" />
+      <span>{{ email }}</span>
+    </div>
+  </div>
+  <div class="company-socials">
+    @for (item of socialImages; track $index) {
+    <div class="image-block">
+      <img [src]="item" width="20" />
+    </div>
+    }
+  </div>
+</div>
+<div class="copy-right">
+  <ion-label> (c) 2025 Rivy. All right reserved </ion-label>
+  <ion-label>
+    Privacy Policy
+    <div class="circle"></div>
+    Terms of service
+  </ion-label>
+</div>
