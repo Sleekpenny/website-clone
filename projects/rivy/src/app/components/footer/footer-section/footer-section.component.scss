@@ -1,19 +1,30 @@
 .footer {
     margin-top: 200px;
-
     display: flex;
     align-items: start;
-    gap: 50px;
+    gap: 20px;
+
+    &>* {
+        flex: 1;
+    }
+
 
     .footer-items {
         display: flex;
         justify-content: center;
-        align-items: start;
-        gap: 50px;
+        gap: 15px;
+        width: 100% !important;
+
+        &>* {
+            flex: 1;
+        }
 
         .footer-services {
             display: flex;
-            gap: 30px;
+
+            &>* {
+                flex: 1;
+            }
 
             ion-label {
                 font-size: 15px;
@@ -28,14 +39,26 @@
     }
 }
 
-
-
-@media only screen and (max-width:525px) {
+@media only screen and (max-width: 525px) {
     .footer {
+        margin-top: 100px;
         flex-direction: column;
+
+        &>* {
+            flex: 0;
+        }
 
         .footer-items {
             flex-direction: column;
+            gap: 0px;
+
+            .footer-services {
+               gap: 30px;
+               justify-content: center;
+                &>* {
+                   flex: none !important;
+                }
+            }
         }
     }
 }

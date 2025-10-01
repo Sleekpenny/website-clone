@@ -3,64 +3,72 @@
     justify-content: center;
     align-items: center;
 }
-
-.header {
-    position: sticky !important;
-    top: 25px !important;
-    left: 0;
-    z-index: 100;
-    background: rgb(14, 35, 22);
-    @include flex-center();
-    justify-content: space-between !important;
+.container {
+    display: flex;
+    justify-content: center;
     align-items: center;
     margin: auto;
-    padding: 12px 18px;
-    border-radius: 10px;
-    border: .5px solid var(--rivy-border-color);
-    max-width: 1200px;
+    top: 25px !important;
+        position: sticky !important;
+        z-index: 100;
+        width: 100% !important;
+        
 
-    .company-tag {
-        max-width: 95px;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
-    }
-
-    .header-info {
-        @include flex-center;
-        gap: 5px;
-        padding: 6px;
-        border-radius: var(--rivy-border-radius);
-        border: .2px solid var(--rivy-border-color);
-
-        .header-title {
-            padding: 6px 12px;
-            @include flex-center();
-            gap: 5px;
-            align-items: end;
-            background: #3e4f4566;
-            color: var(--rivy-text-color);
-            border-radius: var(--rivy-border-radius);
-            transition: all .2s ease-in-out;
-
-            p {
-                margin: 0px;
-                font-weight: 600;
+    .header {
+        background: rgb(14, 35, 22);
+        @include flex-center();
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 18px;
+        border-radius: 10px;
+        border: .5px solid var(--rivy-border-color);
+        width: 100% !important;
+        margin: 0 !important;
+        
+        
+        .company-tag {
+            max-width: 95px;
+    
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
             }
         }
-
-        .header-title:hover {
-            background: rgba(234, 232, 232, 0.404);
-            transition: all .2s ease-in-out;
+    
+        .header-info {
+            @include flex-center;
+            gap: 5px;
+            padding: 6px;
+            border-radius: var(--rivy-border-radius);
+            border: .2px solid var(--rivy-border-color);
+    
+            .header-title {
+                padding: 6px 12px;
+                @include flex-center();
+                gap: 5px;
+                align-items: end;
+                background: #3e4f4566;
+                color: var(--rivy-text-color);
+                border-radius: var(--rivy-border-radius);
+                transition: all .2s ease-in-out;
+    
+                p {
+                    margin: 0px;
+                    font-weight: 600;
+                }
+            }
+    
+            .header-title:hover {
+                background: rgba(234, 232, 232, 0.404);
+                transition: all .2s ease-in-out;
+            }
+    
         }
-
-    }
-
-    .access-btn {
-        @include flex-center;
-        gap: 5px;
+    
+        .access-btn {
+            @include flex-center;
+            gap: 5px;
+        }
     }
 }

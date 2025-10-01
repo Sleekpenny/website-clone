@@ -37,6 +37,10 @@
 @import '@ionic/angular/css/palettes/dark.system.css';
 @import '../node_modules/shared-library/assets/scss/styles.scss';
 
+.page {
+    max-width: 864px !important;
+    margin: auto;
+}
 
 *, body {
     font-family: "Degular Display Demo", "Roboto", "sans-serif" !important;

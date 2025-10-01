@@ -1,53 +1,82 @@
-.card {
-    background: oklch(96.41% .0218 138.98);
-    padding: 30px;
-    border: 1px solid #cfd3d066;
-    border-radius: 20px;
+.container {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
 
-    .content {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
+    .card {
+        background: oklch(96.41% .0218 138.98);
+        padding: 30px;
+        border: 1px solid #cfd3d066; 
+        border-radius: 10px;
 
-        ion-text {
-            color: black;
-            padding: 0 50px 0 0;
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
 
-            p{ 
-                padding-bottom: 10px;
+            ion-text {
+                color: black;
+                padding: 0 50px 0 0;
+
+                p {
+                    padding-bottom: 10px;
+                }
+
+                span {
+                    font-weight: 600;
+                    font-size: 18px;
+                    transition: all .2s ease-in-out;
+                    color: var(--rivy-support-text-color) !important;
+                }
             }
-            span {
-                font-weight: 600;
-                font-size: 18px;
+
+            span:hover {
+                color: black !important;
+                border-bottom: 2px solid black;
                 transition: all .2s ease-in-out;
-                color: var(--rivy-support-text-color) !important;
+                cursor: pointer;
             }
         }
 
-        span:hover {
-            color: black !important;
-            border-bottom: 2px solid black;
-            transition: all .2s ease-in-out;
-            cursor: pointer;
-        }
     }
 
+    .servicePlatform {
+        display: flex;
+        gap: 10px;
+        padding-top: 20px;
+        width: 100%;
+
+        .signIn {
+            background: black;
+            border-radius: 5px;
+            display: flex;
+            gap: 5px;
+            padding: 7px 24px;
+
+            ion-label {
+                font-size: 13.5px
+            }
+        }
+    }
 }
 
-.servicePlatform {
-    display: flex;
-    gap: 10px;
-    padding-top:20px;
+@media only screen and (max-width: 525px) {
+    .container {
+        flex-direction: column-reverse;
+        .card {
+            padding: 15px;
+        }
 
-    .signIn {
-        background: black;
-        border-radius: 5px;
-        display: flex;
-        gap: 5px;
-        padding: 10px 24px;
-
-        ion-label { 
-        font-size: 13.5px
+        .servicePlatform {
+            flex-direction: column;
+            padding: 0 0 20px 0 !important;
+    
+            .signIn {
+                width: 100% !important;
+                align-items: center;
+                justify-content: center;
+            }
         }
     }
 }

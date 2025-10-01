@@ -15,7 +15,7 @@ import { SocialBarComponent } from "../social-bar/social-bar.component";
 export class FooterSectionComponent implements OnInit {
   footerItems = [
     {
-      title: 'Product',
+      title: 'Products',
       service: [
         { title: 'Inventory Financing', path: '' },
         { title: 'Assets Financing', path: '' },

@@ -1,27 +1,29 @@
-<div class="header">
-  <div class="company-tag">
-    <img [src]="company.image"/>
-  </div>
-
-  <ul class="header-info">
-    @for(list of company.headerList; track $index) {
-    <li class="header-title" (mouseenter)="onLeave()" (mouseenter)="onHover($index)">
-      @if (list.title === 'Contact us' ) {
-      <p [style.fontSize]="'10.5px'">{{ list.title }}</p>
-      } @else {
-      <p>{{ list.title }}</p>
-      } @if (list.icon) {
-      <ion-icon
-        [name]="hoveredIndex === $index ? 'chevron-up-outline' : 'chevron-down-outline'"
-        slot="end"
-      ></ion-icon>
+<div class="container">
+  <div class="header">
+    <div class="company-tag">
+      <img [src]="company.image"/>
+    </div>
+  
+    <ul class="header-info">
+      @for(list of company.headerList; track $index) {
+      <li class="header-title" (mouseenter)="onLeave()" (mouseenter)="onHover($index)">
+        @if (list.title === 'Contact us' ) {
+        <p [style.fontSize]="'10.5px'">{{ list.title }}</p>
+        } @else {
+        <p>{{ list.title }}</p>
+        } @if (list.icon) {
+        <ion-icon
+          [name]="hoveredIndex === $index ? 'chevron-up-outline' : 'chevron-down-outline'"
+          slot="end"
+        ></ion-icon>
+        }
+      </li>
       }
-    </li>
-    }
-  </ul>
-
-  <div class="access-btn">
-    <ion-button class="login" color="none">Login</ion-button>
-    <ion-button class="create" color="none ">Open an account</ion-button>
+    </ul>
+  
+    <div class="access-btn">
+      <ion-button class="login" color="none">Login</ion-button>
+      <ion-button class="create" color="none ">Open an account</ion-button>
+    </div>
   </div>
 </div>

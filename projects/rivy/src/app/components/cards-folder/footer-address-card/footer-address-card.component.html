@@ -1,18 +1,20 @@
-<div class="card">
-  <div class="content">
-    @for (item of addressProp; track $index) {
-    <ion-text>
-      <p>{{ item.title }}</p>
-      <span>{{ item.value }}</span>
-    </ion-text>
+<div class="container">
+  <div class="card">
+    <div class="content">
+      @for (item of addressProp; track $index) {
+      <ion-text>
+        <p>{{ item.title }}</p>
+        <span>{{ item.value }}</span>
+      </ion-text>
+      }
+    </div>
+  </div>
+  <div class="servicePlatform">
+    @for (item of platforms; track $index) {
+      <div class="signIn">
+        <img [src]="item.image" width="15"/>
+        <ion-label>{{ item.label }}</ion-label>
+      </div>
     }
   </div>
-</div>
-<div class="servicePlatform">
-  @for (item of platforms; track $index) {
-    <div class="signIn">
-      <img [src]="item.image" width="15"/>
-      <ion-label>{{ item.label }}</ion-label>
-    </div>
-  }
 </div>

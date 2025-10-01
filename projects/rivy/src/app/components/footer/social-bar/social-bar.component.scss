@@ -5,6 +5,7 @@
     background: var(--ion-color-primary);
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     width: 100%;
 
@@ -34,7 +35,7 @@
 
     .company-socials {
         display: flex;
-        gap: 20px;
+        gap: 10px;
         align-items: center;
 
         .image-block {
@@ -54,6 +55,8 @@
         display: flex;
         gap: 10px;
         font-weight: 200;
+        
+            align-items: center;
 
         .circle {
             width: 10px;
@@ -61,5 +64,21 @@
             border-radius: 50%;
             background: var(--ion-color-primary)
         }
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    .social-bar {
+        .company-socials {
+            padding-top: 20px;
+            width: 100% !important;
+            justify-content: center;
+            gap: 20px
+        }
+    }
+    .copy-right {
+        justify-content: start;
+        flex-direction: column;
+        gap: 5px
     }
 }
